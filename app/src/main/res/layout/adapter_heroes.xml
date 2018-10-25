@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myHeroAvatarCircleImage"
+        android:layout_width="@dimen/my_heroes_image_size"
+        android:layout_height="@dimen/my_heroes_image_size"
+        android:layout_margin="@dimen/my_heroes_margin_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/myHeroWidget"
+        android:layout_width="@dimen/my_heroes_image_medal_size"
+        android:layout_height="@dimen/my_heroes_image_medal_size"
+        android:visibility="invisible"
+        android:src="@drawable/host_list_icon_badge"
+        app:layout_constraintBottom_toBottomOf="@+id/myHeroAvatarCircleImage"
+        app:layout_constraintEnd_toEndOf="@+id/myHeroAvatarCircleImage" />
+
+    <TextView
+        android:id="@+id/myHeroName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/my_heroes_margin_labels"
+        android:layout_marginLeft="@dimen/my_heroes_margin_labels"
+        android:layout_marginEnd="@dimen/my_heroes_margin_labels"
+        android:layout_marginRight="@dimen/my_heroes_margin_labels"
+        style="@style/Name"
+        app:layout_constraintEnd_toStartOf="@+id/myHeroLoveIcon"
+        app:layout_constraintStart_toEndOf="@+id/myHeroAvatarCircleImage"
+        app:layout_constraintTop_toTopOf="@+id/myHeroAvatarCircleImage" />
+
+    <ImageView
+        android:id="@+id/myHeroLoveIcon"
+        android:layout_width="@dimen/my_heroes_image_love_size"
+        android:src="@drawable/icon_like_border_vector_gray_battleship"
+        android:layout_height="@dimen/my_heroes_image_love_size"
+        android:layout_marginEnd="@dimen/my_heroes_margin_labels"
+        android:layout_marginRight="@dimen/my_heroes_margin_labels"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/myHeroAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myHeroName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$"
+        android:textColor="@color/grayScale3"
+        android:textSize="@dimen/my_heroes_adapter_font_size_price"
+        app:layout_constraintTop_toTopOf="@+id/myHeroPrice"
+        app:layout_constraintRight_toLeftOf="@+id/myHeroPrice"
+        app:layout_constraintBottom_toBottomOf="@+id/myHeroPrice"/>
+
+    <TextView
+        android:id="@+id/myHeroPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/my_heroes_margin_labels"
+        android:layout_marginRight="@dimen/my_heroes_margin_labels"
+        style="@style/Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myHeroLoveIcon" />
+
+    <TextView
+        android:id="@+id/myHeroAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/my_heroes_margin_labels"
+        android:layout_marginLeft="@dimen/my_heroes_margin_labels"
+        android:layout_marginEnd="@dimen/my_heroes_margin_labels"
+        android:layout_marginRight="@dimen/my_heroes_margin_labels"
+        style="@style/Neighborhood"
+        app:layout_constraintEnd_toStartOf="@+id/myHeroLabel"
+        app:layout_constraintStart_toEndOf="@+id/myHeroAvatarCircleImage"
+        app:layout_constraintTop_toBottomOf="@+id/myHeroName" />
+
+    <TextView
+        android:id="@+id/myHeroLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="por noite"
+        app:layout_constraintEnd_toEndOf="@+id/myHeroPrice"
+        app:layout_constraintTop_toBottomOf="@+id/myHeroPrice" />
+
+    <LinearLayout
+        android:id="@+id/myHeroContentButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_heroes_margin_labels"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myHeroAvatarCircleImage">
+
+        <Button
+            android:id="@+id/myHeroesTalkButton"
+            style="@style/ButtonTalk"
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_margin="@dimen/my_heroes_margin_labels"
+            android:layout_height="@dimen/my_heroes_height_buttons"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/myHeroesReserveButton"
+            style="@style/ButtonReserve"
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_margin="@dimen/my_heroes_margin_labels"
+            android:layout_height="@dimen/my_heroes_height_buttons"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

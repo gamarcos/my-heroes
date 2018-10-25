@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DHProject</string>
+
+    <string name="my_heroes_sub_title_favorites">Heróis favoritos</string>
+    <string name="my_heroes_sub_title_recents">Heróis com quem hospedei</string>
+    
+    <string name="my_heroes_talk_button_text">Conversar</string>
+    <string name="my_heroes_reserve_button_text">Reservar de novo</string>
+</resources>

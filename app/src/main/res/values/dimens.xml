@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_heroes_adapter_font_size_text_buttons">14sp</dimen>
+    <dimen name="my_heroes_adapter_font_size_name">18sp</dimen>
+    <dimen name="my_heroes_adapter_font_size_address">14sp</dimen>
+    <dimen name="my_heroes_adapter_font_size_price">16sp</dimen>
+    <dimen name="my_heroes_adapter_font_size_sub_title">14sp</dimen>
+    
+    <dimen name="my_heroes_height_buttons">40dp</dimen>
+    <dimen name="my_heroes_image_size">64dp</dimen>
+    <dimen name="my_heroes_margin_vertical">16dp</dimen>
+    <dimen name="my_heroes_margin_horizontal">16dp</dimen>
+    <dimen name="my_heroes_image_love_size">24dp</dimen>
+    <dimen name="my_heroes_image_medal_size">24dp</dimen>
+
+    <dimen name="my_heroes_margin_labels">8dp</dimen>
+</resources>

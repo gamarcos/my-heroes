@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonReserve" >
+        <item name="android:text">@string/my_heroes_reserve_button_text</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/bg_button_reserve</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/my_heroes_adapter_font_size_text_buttons</item>
+    </style>
+
+    <style name="ButtonTalk" >
+        <item name="android:text">@string/my_heroes_talk_button_text</item>
+        <item name="android:textColor">@color/grayScale1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/bg_button_talk</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/my_heroes_adapter_font_size_text_buttons</item>
+    </style>
+    
+    <style name="SubTitleRecents">
+        <item name="android:text">@string/my_heroes_sub_title_recents</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grayScale1</item>
+        <item name="android:textSize">@dimen/my_heroes_adapter_font_size_sub_title</item>
+    </style>
+
+    <style name="SubTitleFavorites">
+        <item name="android:text">@string/my_heroes_sub_title_favorites</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grayScale1</item>
+        <item name="android:textSize">@dimen/my_heroes_adapter_font_size_sub_title</item>
+    </style>
+
+    <style name="Name">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grayScale3</item>
+        <item name="android:textSize">@dimen/my_heroes_adapter_font_size_name</item>
+    </style>
+
+    <style name="Neighborhood">
+        <item name="android:textColor">@color/grayScale2</item>
+        <item name="android:textSize">@dimen/my_heroes_adapter_font_size_address</item>
+    </style>
+
+    <style name="Price">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grayScale3</item>
+        <item name="android:textSize">@dimen/my_heroes_adapter_font_size_price</item>
+    </style>
+
+</resources>
